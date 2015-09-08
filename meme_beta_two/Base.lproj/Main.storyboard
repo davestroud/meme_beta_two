@@ -2,6 +2,7 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8187.4" systemVersion="15A279b" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8151.3"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
@@ -15,12 +16,75 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="tFN-fG-Lop">
+                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                                <animations/>
+                            </imageView>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kT0-9M-qbD">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                                <animations/>
+                                <items>
+                                    <barButtonItem title="Pick" id="NQP-yP-BhL">
+                                        <connections>
+                                            <action selector="pickAnImage:" destination="BYZ-38-t0r" id="wgM-ri-fY0"/>
+                                        </connections>
+                                    </barButtonItem>
+                                </items>
+                            </toolbar>
+                        </subviews>
                         <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="kT0-9M-qbD" firstAttribute="top" secondItem="tFN-fG-Lop" secondAttribute="bottom" constant="92" id="5Km-at-4Xr"/>
+                            <constraint firstItem="tFN-fG-Lop" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="124" id="6NI-97-9YA"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="kT0-9M-qbD" secondAttribute="trailing" constant="-20" id="DZl-Ue-ffo"/>
+                            <constraint firstItem="kT0-9M-qbD" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-20" id="LhP-F3-wRx"/>
+                            <constraint firstItem="kT0-9M-qbD" firstAttribute="top" secondItem="tFN-fG-Lop" secondAttribute="bottom" constant="92" id="bgY-BS-iQU"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="tFN-fG-Lop" secondAttribute="trailing" constant="60" id="eZc-PC-h9b"/>
+                            <constraint firstItem="tFN-fG-Lop" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="60" id="liF-MG-SyJ"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="kT0-9M-qbD" secondAttribute="bottom" constant="8" id="olu-pA-kfA"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="tFN-fG-Lop"/>
+                                <exclude reference="kT0-9M-qbD"/>
+                            </mask>
+                            <mask key="constraints">
+                                <exclude reference="6NI-97-9YA"/>
+                                <exclude reference="eZc-PC-h9b"/>
+                                <exclude reference="liF-MG-SyJ"/>
+                                <exclude reference="5Km-at-4Xr"/>
+                                <exclude reference="DZl-Ue-ffo"/>
+                                <exclude reference="LhP-F3-wRx"/>
+                                <exclude reference="bgY-BS-iQU"/>
+                                <exclude reference="olu-pA-kfA"/>
+                            </mask>
+                        </variation>
+                        <variation key="widthClass=compact">
+                            <mask key="subviews">
+                                <include reference="tFN-fG-Lop"/>
+                                <include reference="kT0-9M-qbD"/>
+                            </mask>
+                            <mask key="constraints">
+                                <include reference="6NI-97-9YA"/>
+                                <include reference="eZc-PC-h9b"/>
+                                <include reference="liF-MG-SyJ"/>
+                                <include reference="5Km-at-4Xr"/>
+                                <include reference="DZl-Ue-ffo"/>
+                                <include reference="LhP-F3-wRx"/>
+                                <include reference="bgY-BS-iQU"/>
+                                <include reference="olu-pA-kfA"/>
+                            </mask>
+                        </variation>
                     </view>
+                    <connections>
+                        <outlet property="imagePickerView" destination="tFN-fG-Lop" id="8hy-cc-qhr"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="196.5" y="354"/>
         </scene>
     </scenes>
 </document>
