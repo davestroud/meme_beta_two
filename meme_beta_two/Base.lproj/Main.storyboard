@@ -2,6 +2,7 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8187.4" systemVersion="15A279b" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8151.3"/>
+        <capability name="Alignment constraints with different attributes" minToolsVersion="5.1"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
@@ -51,14 +52,14 @@
                                 <exclude reference="kT0-9M-qbD"/>
                             </mask>
                             <mask key="constraints">
-                                <exclude reference="6NI-97-9YA"/>
-                                <exclude reference="eZc-PC-h9b"/>
-                                <exclude reference="liF-MG-SyJ"/>
+                                <exclude reference="olu-pA-kfA"/>
                                 <exclude reference="5Km-at-4Xr"/>
                                 <exclude reference="DZl-Ue-ffo"/>
                                 <exclude reference="LhP-F3-wRx"/>
                                 <exclude reference="bgY-BS-iQU"/>
-                                <exclude reference="olu-pA-kfA"/>
+                                <exclude reference="6NI-97-9YA"/>
+                                <exclude reference="eZc-PC-h9b"/>
+                                <exclude reference="liF-MG-SyJ"/>
                             </mask>
                         </variation>
                         <variation key="widthClass=compact">
@@ -67,14 +68,14 @@
                                 <include reference="kT0-9M-qbD"/>
                             </mask>
                             <mask key="constraints">
-                                <include reference="6NI-97-9YA"/>
-                                <include reference="eZc-PC-h9b"/>
-                                <include reference="liF-MG-SyJ"/>
+                                <include reference="olu-pA-kfA"/>
                                 <include reference="5Km-at-4Xr"/>
                                 <include reference="DZl-Ue-ffo"/>
                                 <include reference="LhP-F3-wRx"/>
                                 <include reference="bgY-BS-iQU"/>
-                                <include reference="olu-pA-kfA"/>
+                                <include reference="6NI-97-9YA"/>
+                                <include reference="eZc-PC-h9b"/>
+                                <include reference="liF-MG-SyJ"/>
                             </mask>
                         </variation>
                     </view>

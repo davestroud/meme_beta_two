@@ -14,6 +14,7 @@
 		8B2238391B9F9D0300AF1BBD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8B2238371B9F9D0300AF1BBD /* LaunchScreen.storyboard */; };
 		8B2238441B9F9D0300AF1BBD /* meme_beta_twoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B2238431B9F9D0300AF1BBD /* meme_beta_twoTests.swift */; };
 		8B22384F1B9F9D0300AF1BBD /* meme_beta_twoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B22384E1B9F9D0300AF1BBD /* meme_beta_twoUITests.swift */; };
+		8B2BA2AB1BA0919D00E3DE3E /* UIImagePickerControllerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B2BA2AA1BA0919D00E3DE3E /* UIImagePickerControllerDelegate.swift */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +48,7 @@
 		8B22384A1B9F9D0300AF1BBD /* meme_beta_twoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = meme_beta_twoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8B22384E1B9F9D0300AF1BBD /* meme_beta_twoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = meme_beta_twoUITests.swift; sourceTree = "<group>"; };
 		8B2238501B9F9D0300AF1BBD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8B2BA2AA1BA0919D00E3DE3E /* UIImagePickerControllerDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIImagePickerControllerDelegate.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,6 +99,7 @@
 		8B22382D1B9F9D0300AF1BBD /* meme_beta_two */ = {
 			isa = PBXGroup;
 			children = (
+				8B2BA2A91BA0831F00E3DE3E /* Image Picker Delegate */,
 				8B22382E1B9F9D0300AF1BBD /* AppDelegate.swift */,
 				8B2238301B9F9D0300AF1BBD /* ViewController.swift */,
 				8B2238321B9F9D0300AF1BBD /* Main.storyboard */,
@@ -123,6 +126,14 @@
 				8B2238501B9F9D0300AF1BBD /* Info.plist */,
 			);
 			path = meme_beta_twoUITests;
+			sourceTree = "<group>";
+		};
+		8B2BA2A91BA0831F00E3DE3E /* Image Picker Delegate */ = {
+			isa = PBXGroup;
+			children = (
+				8B2BA2AA1BA0919D00E3DE3E /* UIImagePickerControllerDelegate.swift */,
+			);
+			name = "Image Picker Delegate";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -257,6 +268,7 @@
 			files = (
 				8B2238311B9F9D0300AF1BBD /* ViewController.swift in Sources */,
 				8B22382F1B9F9D0300AF1BBD /* AppDelegate.swift in Sources */,
+				8B2BA2AB1BA0919D00E3DE3E /* UIImagePickerControllerDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -481,6 +493,7 @@
 				8B2238551B9F9D0300AF1BBD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		8B2238561B9F9D0300AF1BBD /* Build configuration list for PBXNativeTarget "meme_beta_twoTests" */ = {
 			isa = XCConfigurationList;
@@ -489,6 +502,7 @@
 				8B2238581B9F9D0300AF1BBD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		8B2238591B9F9D0300AF1BBD /* Build configuration list for PBXNativeTarget "meme_beta_twoUITests" */ = {
 			isa = XCConfigurationList;
@@ -497,6 +511,7 @@
 				8B22385B1B9F9D0300AF1BBD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
