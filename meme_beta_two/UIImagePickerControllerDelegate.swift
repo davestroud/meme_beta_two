@@ -9,13 +9,13 @@
 import Foundation
 import UIKit
 
-class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
-
-}
+class UIImagePickerDelegate: UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
 
 
-@IBAction func pickAnImage(sender: AnyObject) {
+    @IBAction func pickAnImage(sender: AnyObject) {
     let imagePicker = UIImagePickerController()
     imagePicker.delegate = self
     self.presentViewController(imagePicker, animated: true, completion: nil)
+    
+    }
 }

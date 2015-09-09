@@ -13,17 +13,9 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
     
     @IBOutlet weak var imagePickerView: UIImageView!
     
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
     }
-    
-    
-    @IBAction func pickAnImage(sender: AnyObject) {
-        let pickerController = UIImagePickerController()
-        self.presentViewController(pickerController, animated: true, completion:nil)
-    }
-    
 }
 
